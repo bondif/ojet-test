@@ -1,0 +1,8 @@
+graph-size-calculator:not(.oj-complete){
+  visibility: hidden;
+}
+
+graph-size-calculator{
+	min-height: 50px;
+	width: 50px;
+}
