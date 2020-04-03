@@ -9,12 +9,14 @@
         <oj-label for="graphConfig" show-required="true">Please enter your graph config below</oj-label>
         <br>
         <div class="oj-flex">
-            <oj-text-area class="oj-flex-item" id="graphConfig" rows="20" style="max-width: 100%"
+            <oj-text-area class="oj-flex-item" value="{{originalGraphConfig}}" rows="20" style="max-width: 100%"
                           placeholder="Your graph configuration here"></oj-text-area>
         </div>
         <br>
-        <oj-button id="save" required="true">
-            <span>Save</span>
-        </oj-button>
+        <oj-button id="save" required="true" on-oj-action="[[onSave]]">Save</oj-button>
     </oj-form-template>
+</div>
+
+<div id="wrapper">
+    <oj-bind-dom config="{{ domBindingConfig }}"></oj-bind-dom>
 </div>

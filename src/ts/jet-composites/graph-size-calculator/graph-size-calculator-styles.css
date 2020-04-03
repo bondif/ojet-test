@@ -6,3 +6,7 @@ graph-size-calculator{
 	min-height: 50px;
 	width: 50px;
 }
+
+graph-size-calculator .hide {
+	display: none;
+}
